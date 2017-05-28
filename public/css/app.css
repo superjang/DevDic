@@ -1,0 +1,126 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+
+body { line-height: 1; font-family: "Noto Sans DemiLight", "Malgun Gothic"; -webkit-font-smoothing: antialiased; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+nav, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+a { margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+
+/* change colours to suit your needs */
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+
+/* change colours to suit your needs */
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #cccccc; margin: 1em 0; padding: 0; }
+
+input, textarea { border: none; }
+
+input, select { vertical-align: middle; }
+
+button { background-color: transparent; border: none; }
+
+a { text-decoration: none; color: #3e3e3e; }
+
+#app { width: 100%; background-color: #fff; }
+#app .app_header { position: fixed; top: 0; width: 100%; min-height: 89px; box-sizing: border-box; background-color: #0d3349; }
+#app .app_content { background-color: #fff; box-sizing: border-box; margin-top: 89px; margin-bottom: 50px; }
+#app .app_footer { position: fixed; bottom: 0; width: 100%; height: 50px; box-sizing: border-box; }
+
+#app.view__dictionary_detail .app_content { padding: 15px; margin-bottom: 100px; }
+#app.view__dictionary_add .app_content { padding: 15px; margin-bottom: 100px; }
+#app.view__dictionary_edit .app_content { padding: 15px; margin-bottom: 100px; }
+#app.view__dictionary_login .app_content { padding: 15px; margin-bottom: 100px; }
+#app.view__dictionary_register .app_content { padding: 15px; margin-bottom: 100px; }
+
+.form__search { width: 100%; position: relative; }
+.form__search .input__search { width: 100%; height: 40px; line-height: 40px; padding: 0 70px 0 10px; box-sizing: border-box; font-size: 1rem; color: #666; border: none; }
+.form__search .btn__keyword_search { position: absolute; right: 0; top: 0; width: 65px; height: 40px; padding: 0; }
+.form__search .btn__keyword_search .btn__keyword_search_image { display: block; width: 100%; height: 100%; background-color: #000; color: #fff; line-height: 40px; font-weight: bold; font-size: 14px; }
+
+.dictionary__information { padding: 15px; border-bottom: 1px solid #ddd; background: #82a467; color: #fff; line-height: 1.2rem; }
+
+.dictionary__table_box { width: 100%; overflow-y: scroll; }
+
+.dictionary__table { width: 100%; box-sizing: border-box; background-color: #fff; }
+.dictionary__table thead th { font-size: 14px; letter-spacing: -.5px; padding: 15px 5px; background-color: #ddd; }
+.dictionary__table thead th.dictionary__column_index { width: 30px; }
+.dictionary__table thead th.dictionary__column_keyword { padding: 15px 20px; }
+.dictionary__table thead th.dictionary__column_category { width: 20px; }
+.dictionary__table thead th.dictionary__column_definition { width: auto; }
+.dictionary__table thead th.dictionary__column_option_link { width: 40px; }
+.dictionary__table tbody .dictionary__keyword_detail_link { display: block; }
+.dictionary__table tbody td { padding: 15px 5px; vertical-align: middle; line-height: 1.2rem; font-size: 0.9rem; border-bottom: 1px solid #ddd; }
+.dictionary__table tbody td.dictionary__column_item_index, .dictionary__table tbody td.dictionary__column_item_keyword, .dictionary__table tbody td.dictionary__column_item_category, .dictionary__table tbody td.dictionary__column_item_option_link { text-align: center; }
+.dictionary__table tbody td.dictionary__column_item_keyword { font-weight: bold; }
+.dictionary__table tbody td.dictionary__column_item_definition { padding-right: 15px; }
+.dictionary__table tbody td.dictionary__column_item_empty { text-align: center; padding: 30px 0; font-size: 1rem; line-height: 1.2rem; color: #666; }
+.dictionary__table tbody td.dictionary__column_item_empty.keyword__no_added .btn__add_keyword { font-weight: bold; }
+
+.dictionary__pagination { width: 100%; *zoom: 1; }
+.dictionary__pagination:after { display: block; clear: both; content: ''; }
+.dictionary__pagination li { float: left; width: 50%; box-sizing: border-box; }
+.dictionary__pagination li .dictionary__pagination_btn_text { display: block; text-align: center; padding: 15px; font-size: 13px; color: #000; background-color: #ddd; border-bottom: 1px solid #ddd; }
+.dictionary__pagination li .dictionary__pagination_btn_text:first-child { border-right: 1px solid #fff; }
+.dictionary__pagination li.disabled .dictionary__pagination_btn_text { text-decoration: line-through; color: #797979; }
+
+.dictionary__detail_item li { border-bottom: 1px solid #ddd; padding-top: 10px; padding-bottom: 10px; margin-bottom: 10px; line-height: 1.2rem; }
+.dictionary__detail_item li:last-child { border-bottom: none; }
+.dictionary__detail_item li.defined { line-height: 1.6rem; }
+
+.dictionary__detail_btn_list { margin-top: 20px; text-align: right; }
+.dictionary__detail_btn_list .btn__keyword_fix, .dictionary__detail_btn_list .btn__keyword_delete { padding: 15px; font-size: 13px; }
+.dictionary__detail_btn_list .form__keyword_delete { display: inline; }
+
+.noti_msg { text-align: center; font-size: 14px; background: #ffa6a6; border-radius: 3px; padding: 15px; color: #fff; width: 100%; box-sizing: border-box; font-weight: bold; }
+
+.dictionary__form { margin-bottom: 20px; }
+.dictionary__form li { border-bottom: 1px solid #ddd; }
+.dictionary__form li .dictionary__form_keyword, .dictionary__form li .dictionary__form_category, .dictionary__form li .dictionary__form_defined, .dictionary__form li .dictionary__form_option_link { font-size: 1rem; line-height: 1rem; width: 100%; box-sizing: border-box; padding: 10px 5px; }
+.dictionary__form li .dictionary__form_defined { height: 150px; overflow-y: scroll; }
+
+.btn__cancel_form, .btn__save_form { font-size: 13px; display: inline-block; text-align: center; line-height: 1; padding: 15px; width: 49%; box-sizing: border-box; border: none; }
+
+.btn__cancel_form { margin-top: -1px; }
+
+.login__form .login__form_box { border-bottom: 1px solid #ddd; }
+.login__form .login__form_input { width: 100%; font-size: 14px; box-sizing: border-box; padding: 0 10px; line-height: 40px; border: none; }
+.login__form .login__form_function .btn__login { margin-top: 30px; width: 100%; text-align: center; line-height: 40px; height: 40px; background-color: #82a467; border-radius: 4px; color: #fff; font-size: 16px; font-weight: bold; }
+.login__form .login__form_function .btn__reset_password { margin-top: 25px; text-align: center; display: block; }
+.login__form .login__form_function .btn__remember_id { margin-top: 15px; display: block; text-align: center; cursor: pointer; }
+
+.register__form .register__form_box { border-bottom: 1px solid #ddd; }
+.register__form .register__form_input { width: 100%; font-size: 14px; box-sizing: border-box; padding: 0 10px; line-height: 40px; border: none; }
+
+.btn__register { margin-top: 30px; width: 100%; text-align: center; line-height: 40px; height: 40px; background-color: #82a467; border-radius: 4px; color: #fff; font-size: 16px; font-weight: bold; }
+
+.app_header { position: relative; z-index: 9999; background-color: #0d3349; box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.3); }
+.app_header .main__logo { display: inline-block; color: #fff; font-weight: bold; font-size: 1.2rem; padding: 15px; position: relative; z-index: 9998; }
+.app_header .btn__global_navigation_title { color: #fff; width: 60px; height: 50px; display: block; position: absolute; right: 0; top: 0; font-size: 1rem; font-weight: bold; }
+.app_header .global_navigation { width: 100%; }
+.app_header .global_navigation.global_navigation--on { display: block; }
+.app_header .global_navigation.global_navigation--off { display: none; }
+.app_header .global_navigation .global_navigation__list_item { width: 100%; }
+.app_header .global_navigation .global_navigation__list_item a { color: #fff; padding: 15px; display: block; font-size: 0.9rem; }
+
+.app_footer { background-color: #000; }
+.app_footer .util__btn { height: 50px; line-height: 50px; font-size: 13px; text-align: center; color: #fff; }
+.app_footer .util__status--has_keywords { *zoom: 1; }
+.app_footer .util__status--has_keywords .util__btn { width: 50%; float: left; display: block; box-sizing: border-box; }
+.app_footer .util__status--has_keywords .util__btn:first-child { border-right: 1px solid #363636; }
+.app_footer .util__status--has_keywords:after { display: block; clear: both; content: ''; }
+.app_footer .util__status--has_not_keywords .util__btn { width: 100%; display: block; box-sizing: border-box; }
+.app_footer .btn__move_top { position: fixed; right: 15px; bottom: 65px; width: 40px; height: 40px; background-color: #333; border-radius: 5px 5px 0 5px; color: #ddd; line-height: 40px; text-align: center; font-weight: bold; font-size: 12px; }
